@@ -35,6 +35,3 @@ const increasingSequence = (
   }
   return [];
 };
-
-// console.log(increasingSequence([1, 2, 3]));
-// console.log(increasingSequence([1, 2, 4]));

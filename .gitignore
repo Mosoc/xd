@@ -1,0 +1,27 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode
+.idea
+*.iml
+
+# Logs
+logs
+*.log
+
+# Coverage
+coverage
+
+# Dependency directory
+node_modules
+
+# Output from test files
+test-files/output/
+examples/**/test-files/output/
+
+# Compiled output
+lib/
+dist/
+build/

@@ -21,7 +21,20 @@ const increasingSequence = (
       .map((value, index) => value + index * differences[0]);
   }
 
+  // Get ratios in the array
+  const radios: number[] = [];
+  for (let index= 1; index < sequence.length; index ++) {
+    radios.push(sequence[index] / sequence[index - 1])
+  }
+
+  // Geometric progression
+  if (radios.every(element => element === radios[0])) {
+    return Array(extending)
+      .fill(sequence[0])
+      .map((value, index) => value * radios[0] ** index);
+  }
   return [];
 };
 
 // console.log(increasingSequence([1, 2, 3]));
+// console.log(increasingSequence([1, 2, 4]));

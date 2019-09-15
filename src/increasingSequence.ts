@@ -23,8 +23,8 @@ const increasingSequence = (
 
   // Get ratios in the array
   const radios: number[] = [];
-  for (let index= 1; index < sequence.length; index ++) {
-    radios.push(sequence[index] / sequence[index - 1])
+  for (let index = 1; index < sequence.length; index++) {
+    radios.push(sequence[index] / sequence[index - 1]);
   }
 
   // Geometric progression
@@ -35,3 +35,5 @@ const increasingSequence = (
   }
   return [];
 };
+
+export default increasingSequence;
